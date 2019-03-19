@@ -6,7 +6,7 @@ use PHPUnit_Framework_TestCase as PHPUnit;
 class GameTest extends PHPUnit{
     
      /**
-     * Test game starts, awaiting first move.
+     * Test game over
      */
     public function testGameOver()
     {
