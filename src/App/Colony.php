@@ -125,13 +125,12 @@ class Colony {
     
     public function callUndertaker(){
        
-      //  $this->colonyPopulation[$this->target]['amount']--;
        // if the killed Bee was the Queen set GameOver to true, since the colony can not survive without her
         if($this->target->getBeeType() == 'Queen'){
             // Log Message that Queen died
            // $message = "The Queen has died, the colony will no longer survive.";
             $this->setMessage(1);
-            // set Game Over to true to end the Game
+            // set Colony Alive to false to end the Game
             $this->colonyAlive = false;
           
         }else{
