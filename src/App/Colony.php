@@ -1,11 +1,6 @@
 <?php
 namespace Beegame;
 
-use Beegame\Queen;
-use Beegame\Drone;
-use Worker;
-
-
 /**
  * Class Colony
  * Description of Colony
