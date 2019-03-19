@@ -1,0 +1,14 @@
+#!/user/bin/env php
+
+<?php
+
+require __DIR__.'/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Beegame\HitCommand;
+
+define('CONSOLE_ROOT', __DIR__);
+
+$app = new Application('Bees in the Trap - Console App', 'v1.0.0');
+$app -> add(new HitCommand());
+$app -> run();
